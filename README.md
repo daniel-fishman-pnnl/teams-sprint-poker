@@ -15,12 +15,4 @@ This started as a hackathon project. Cloned from Microsoft's sample app here ori
 3. Open Debug View (`Ctrl+Shift+D`) and select "Debug in Test Tool (Preview)" in dropdown list.
 4. Press "F5" to launch the Teams App Test Tool.
 5. Type `help` command into input box. Bot will response the list of commands available in this sample.
-
-#### Run the app locally
-To play a game of poker, there are two variations which use two different trigger words. Type into the Test Tool Kit chat:
-1. "poker"
-2. "pointGame"
-3. Type "help" to see the full list of sample bot commands.
-
-
-![test-tool](https://aka.ms/emulator-hero-image)
+6. To play a game of poker, there are two variations which use two different trigger words. Type `poker` or `pointGame`.
