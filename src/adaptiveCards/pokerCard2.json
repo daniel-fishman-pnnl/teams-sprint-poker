@@ -1,0 +1,77 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.6",
+    "body": [
+        {
+            "type": "Input.ChoiceSet",
+            "id": "acPollChoices",
+            "style": "expanded",
+            "label": "Points",
+            "isMultiSelect": false,
+            "placeholder": "Select from these choices",
+            "isRequired": true,
+            "choices": [
+                {
+                    "title": "0.5",
+                    "value": "0.5"
+                },
+                {
+                    "title": "1",
+                    "value": "1"
+                },
+                {
+                    "title": "3",
+                    "value": "3"
+                },
+                {
+                    "title": "5",
+                    "value": "5"
+                },
+                {
+                    "title": "8",
+                    "value": "8"
+                },
+                {
+                    "title": "13",
+                    "value": "13"
+                },
+                {
+                    "title": "???",
+                    "value": "???"
+                }
+            ]
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Execute",
+                    "title": "Submit",
+                    "id": "btnSubmit",
+                    "verb": "vote",
+                    "data": {
+                        "vote": "${acPollChoices}"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "FactSet",
+            "facts": [
+                {
+                    "title": "Votes",
+                    "value": "${votes}"
+                },
+                {
+                    "title": "Point Average (rounded up):",
+                    "value": "${score}"
+                },
+                {
+                    "title": "Undecided",
+                    "value": "${undecided}"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,107 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.6",
+    "body": [
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Execute",
+                    "title": "0.5 (${voteHalfCount})",
+                    "id": "voteHalf",
+                    "verb": "click",
+                    "data": {
+                        "vote": "half",
+                        "newGame": "${newGame}"
+                    }
+                },
+                {
+                    "type": "Action.Execute",
+                    "title": "1 (${voteOneCount})",
+                    "id": "voteOne",
+                    "verb": "click",
+                    "data": {
+                        "vote": "one",
+                        "newGame": "${newGame}"
+                    }
+                },
+                {
+                    "type": "Action.Execute",
+                    "title": "2 (${voteTwoCount})",
+                    "id": "voteTwo",
+                    "verb": "click",
+                    "data": {
+                        "vote": "two",
+                        "newGame": "${newGame}"
+                    }
+                },
+                {
+                    "type": "Action.Execute",
+                    "title": "3 (${voteThreeCount})",
+                    "id": "voteThree",
+                    "verb": "click",
+                    "data": {
+                        "vote": "three",
+                        "newGame": "${newGame}"
+                    }
+                },
+                {
+                    "type": "Action.Execute",
+                    "title": "5 (${voteFiveCount})",
+                    "id": "voteFive",
+                    "verb": "click",
+                    "data": {
+                        "vote": "five",
+                        "newGame": "${newGame}"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Execute",
+                    "title": "8 (${voteEightCount})",
+                    "id": "voteEight",
+                    "verb": "click",
+                    "data": {
+                        "vote": "eight",
+                        "newGame": "${newGame}"
+                    }
+                },
+                {
+                    "type": "Action.Execute",
+                    "title": "13 (${voteThirteenCount})",
+                    "id": "voteThirteen",
+                    "verb": "click",
+                    "data": {
+                        "vote": "thirteen",
+                        "newGame": "${newGame}"
+                    }
+                },
+                {
+                    "type": "Action.Execute",
+                    "title": "21 (${voteTwentyOneCount})",
+                    "id": "voteTwentOne",
+                    "verb": "click",
+                    "data": {
+                        "vote": "twentyone",
+                        "newGame": "${newGame}"
+                    }
+                },
+                {
+                    "type": "Action.Execute",
+                    "title": "??? (${voteUnknownCount})",
+                    "id": "voteUnknown",
+                    "verb": "click",
+                    "data": {
+                        "vote": "unknown",
+                        "newGame": "${newGame}"
+                    }
+                }
+            ]
+        }
+    ]
+}
